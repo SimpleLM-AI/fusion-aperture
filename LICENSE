@@ -1,0 +1,62 @@
+Copyright (c) 2026 Fusion Aperture. All rights reserved.
+
+SPDX-License-Identifier: CC-BY-NC-ND-4.0
+Canonical public license: LICENSES/CC-BY-NC-ND-4.0.txt
+Deed: https://creativecommons.org/licenses/by-nc-nd/4.0/
+Legal code: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+This repository is an evaluation archive. It documents a locked measurement
+of Fusion Aperture. It does not contain Fusion Aperture.
+
+1. Unlicensed materials
+
+The Fusion Aperture inference stack, source code, binaries, kernels, runtime,
+unpublished methods, and any model weights belonging to Fusion Aperture are
+not in this repository and are not licensed by this file. No copyright license,
+patent license, trademark license, or reverse-engineering right is granted for
+those materials. Presence of this archive is not a distribution of the stack.
+
+2. Licensed materials
+
+The manuscript, tables, figures, manifests, hashes, protocol notes, and
+verification scripts in this repository (the "Evaluation Materials") are
+copyright Fusion Aperture.
+
+Subject to the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+International Public License (CC BY-NC-ND 4.0), you may reproduce and Share
+the Evaluation Materials, in whole or in part, for NonCommercial purposes
+only, with the attribution required by that license. You may produce Adapted
+Material for NonCommercial purposes, but you may not Share Adapted Material.
+
+The intended use of verification/verify_hashes.py and
+verification/recompute_aggregates.py is to confirm that a copy of this
+archive matches the published hashes and aggregates. Those scripts remain
+Evaluation Materials under CC BY-NC-ND 4.0. This paragraph states purpose;
+it does not add terms beyond that license.
+
+3. What this license does not grant
+
+CC BY-NC-ND 4.0 does not license patents or trademarks. "Fusion Aperture"
+may be used only for accurate citation of this evaluation. It may not be used
+in a way that suggests endorsement, partnership, or that you ship the stack.
+
+You may not use the Evaluation Materials primarily for commercial advantage
+or monetary compensation. You may not distribute a modified pack as if it were
+this evaluation.
+
+4. Third-party works
+
+Names, protocols, and datasets cited here remain with their owners. That
+includes Qwen3.5-2B (Qwen), NVIDIA RULER (Hsieh et al.), and openai/mrcr
+(OpenAI). This file does not relicense those works. It licenses only Fusion
+Aperture's Evaluation Materials.
+
+5. Disclaimer
+
+THE EVALUATION MATERIALS ARE PROVIDED AS-IS AND AS-AVAILABLE, WITHOUT WARRANTY
+OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NON-INFRINGEMENT. TO THE EXTENT PERMITTED BY LAW,
+FUSION APERTURE SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM USE OF THIS
+ARCHIVE.
+
+If you cite the numbers, cite the paper named in CITATION.cff.

@@ -1,0 +1,7 @@
+# Device
+
+quality_and_memory_measured_on: Apple silicon Macintosh
+product_surface: iPhone 12 and later; A14 Bionic and later chips and devices
+physical_envelope_transferred_to_product_devices: not measured
+
+The meter in measurements/memory.md is macOS ri_phys_footprint of the generation process. RSS on these runs reached the 1.6 to 1.9 GB class and is discarded as a product figure.

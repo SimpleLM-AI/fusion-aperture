@@ -1,0 +1,8 @@
+{
+  "kind": "mrcr_summary",
+  "path": "results/mrcr/summary.json",
+  "sha256": "728cd4ec9484b97f30742275ada52329c05a1163497db9b5640d28cb52fb6023",
+  "n": 91,
+  "bin": "(512K, 1M]",
+  "needles": 2
+}

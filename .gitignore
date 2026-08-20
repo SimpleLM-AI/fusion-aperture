@@ -1,0 +1,8 @@
+.DS_Store
+._*
+__pycache__/
+*.pyc
+.venv/
+.AppleDouble
+.Spotlight-V100
+.Trashes

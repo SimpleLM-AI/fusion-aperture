@@ -1,0 +1,12 @@
+system,score,n,host,trained_for_long_context,url,note
+GPT-4-1106-preview,81.2,,API,unknown,https://github.com/NVIDIA/RULER,NVIDIA 128K column
+Fusion Aperture,80.3,10,Qwen3.5-2B Q4_K_M,false,paper/Fusion_Aperture_Long_Context_Technical_Report.md,this pack
+Qwen3-8B,77.4,,Qwen3-8B,unknown,https://github.com/NVIDIA/RULER,NVIDIA 128K column
+Llama-3.1-8B-Instruct,77.0,,Llama-3.1-8B-Instruct,unknown,https://github.com/NVIDIA/RULER,NVIDIA 128K column
+MInference,77.6,,Llama-3-8B-262K,false,https://arxiv.org/abs/2407.02490,training free method on 8B host
+InfLLM,39.5,,Llama-3-8B-262K,false,https://arxiv.org/abs/2407.02490,cited via MInference table
+StreamingLLM,9.4,,Llama-3-8B-262K,false,https://arxiv.org/abs/2407.02490,cited via MInference table
+MiniCPM-SALA,89.4,,trained hybrid 9B,true,https://arxiv.org/abs/2602.11761,different regime
+Qwen2.5-14B-Instruct-1M,92.2,,14B,true,https://github.com/NVIDIA/RULER,128K cell only
+MagicPIG,81.7,,Llama-3.1-8B-Instruct,false,https://arxiv.org/abs/2410.16179,measured at 96K not 128K
+Quest,74.9,,Llama-3.1-8B-Instruct,false,https://arxiv.org/abs/2406.10774,measured at 96K not 128K

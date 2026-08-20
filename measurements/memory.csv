@@ -1,0 +1,6 @@
+sweep,samples,min_mb,median_mb,max_mb,trusted
+RULER 32K,839,445.5,479.5,543.3,true
+RULER 64K,904,437.0,482.9,522.4,true
+RULER 128K,257,387.1,450.2,492.9,true
+RULER 1M,827,399.9,514.5,766.6,true
+MRCR 512K–1M,69,482.5,520.6,520.7,true

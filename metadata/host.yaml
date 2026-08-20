@@ -1,0 +1,10 @@
+# Host
+
+Every quality number in this pack uses one frozen checkpoint.
+
+system: Fusion Aperture
+name: Qwen3.5-2B
+quantization: Q4_K_M
+weights: memory mapped
+extra_long_context_training: none
+engine_described_here: false

@@ -1,0 +1,7 @@
+{
+  "kind": "niah_public_summary",
+  "note": "Public extract. Lab sidecar fields (paths, wall clock) omitted. Cell counts match the paper.",
+  "path": "results/niah/ladder_summary.json",
+  "sha256": "d1978137d7303bbe38c217ef6ea37ecf2d25a3b78c6bb2ba273482044f81de9e",
+  "lab_file_sha256_in_paper_appendix": "58aca1ecfd60870e474119c8413f123d0fb9a135c2aff2fcfe26fa7726c95299"
+}

@@ -1,0 +1,7 @@
+prediction_jsonl: not shipped
+note: >
+  Item level RULER files (input, pred, gold) and MRCR completions are the
+  audit trail for a third party who wants to rerun stock evaluate.py or
+  SequenceMatcher. They are too large for this clone. A future GitHub
+  Release should attach them and extend hashes.sha256. Until then the
+  checkable objects are the summaries in results/.

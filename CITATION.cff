@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Training-Free Long-Context Inference at a 2B-Quantized Mobile Memory Operating Point"
+message: If you use these evaluation results, please cite this paper.
+type: article
+authors:
+  - name: Fusion Aperture
+date-released: "2026-08-19"
+abstract: >-
+  Locked evaluation of Fusion Aperture on a frozen Qwen3.5-2B Q4_K_M host
+  with no extra long-context training. RULER, a 110-cell NIAH ladder, and
+  OpenAI-MRCR are reported together with Darwin physical footprint. The
+  stack is not described.
+keywords:
+  - long context
+  - on-device inference
+  - RULER
+  - NIAH
+  - MRCR
+license: CC-BY-NC-ND-4.0

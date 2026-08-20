@@ -1,0 +1,6 @@
+system,score,n,bin,needles,url,note
+GPT-4.1,0.463,,1M class,2,https://openai.com/index/gpt-4-1/,OpenAI post
+GPT-4.1 mini,0.333,,1M class,2,https://openai.com/index/gpt-4-1/,OpenAI post
+Fusion Aperture,0.326,91,"(512K, 1M]",2,https://huggingface.co/datasets/openai/mrcr,this pack
+GPT-4.1 nano,0.120,,1M class,2,https://openai.com/index/gpt-4-1/,OpenAI post
+MiniCPM-SALA,28.62,,128K,2,https://arxiv.org/abs/2602.11761,DIFFERENT LENGTH; not this board

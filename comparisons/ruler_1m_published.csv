@@ -1,0 +1,6 @@
+system,score,n,host,trained_for_long_context,url,note
+MiniCPM-SALA,86.3,,trained hybrid 9B,true,https://arxiv.org/abs/2602.11761,trained specialist
+Qwen3-235B-A22B-Instruct-2507,84.5,20,235B,true,https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct,from the Next-80B card table
+Qwen3-Next-80B-A3B-Instruct,80.3,20,80B A3B,true,https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct,n=20
+Qwen3-30B-A3B-Instruct-2507,72.8,20,30B,true,https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct,n=20
+Fusion Aperture,72.0,10,Qwen3.5-2B Q4_K_M,false,paper/Fusion_Aperture_Long_Context_Technical_Report.md,this pack; NVIDIA has no 1M column

@@ -1,0 +1,10 @@
+# Decode settings locked for this evaluation
+#
+# These are NVIDIA RULER's published defaults (temperature 0 in the
+# paper and repository). They are not a Fusion Aperture configuration.
+
+temperature: 0.0
+top_p: 1.0
+top_k: 32
+ruler_chat_template: base
+source: "NVIDIA RULER defaults, arXiv:2404.06654 and github.com/NVIDIA/RULER"

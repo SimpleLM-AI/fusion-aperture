@@ -1,0 +1,63 @@
+{
+  "kind": "ruler_summaries",
+  "nulls": "0/10 every task every length",
+  "prediction_jsonl": "not shipped in this clone; future release will list pred/{task}.jsonl per length",
+  "files": [
+    {
+      "path": "results/ruler/4096/summary.csv",
+      "sha256": "2b9f31820b0c3b47890ed91a7c413c67ca423e8dab7d92e7ff6cfbb90b0177fb",
+      "ctx": "4K",
+      "tokens": 4096,
+      "n_per_task": 10,
+      "scorer": "NVIDIA evaluate.py"
+    },
+    {
+      "path": "results/ruler/8192/summary.csv",
+      "sha256": "aa4e13493b72d55b346bfc164b182ce15f97282daf8d46c0ecdc59fdec652957",
+      "ctx": "8K",
+      "tokens": 8192,
+      "n_per_task": 10,
+      "scorer": "NVIDIA evaluate.py"
+    },
+    {
+      "path": "results/ruler/16384/summary.csv",
+      "sha256": "2d70d373c386bab28e5f021c5a3bb13c7952a21477d583a1c96d7a06dcf36892",
+      "ctx": "16K",
+      "tokens": 16384,
+      "n_per_task": 10,
+      "scorer": "NVIDIA evaluate.py"
+    },
+    {
+      "path": "results/ruler/32768/summary.csv",
+      "sha256": "3bdf21b7793a114cd57ff4b98c0d74638e946a9ab7400bf0196451a9d7eedd37",
+      "ctx": "32K",
+      "tokens": 32768,
+      "n_per_task": 10,
+      "scorer": "NVIDIA evaluate.py"
+    },
+    {
+      "path": "results/ruler/65536/summary.csv",
+      "sha256": "2ff88b66ece3e0f80f1436424eda08363930a7b69d907496f9a246086e3f97de",
+      "ctx": "64K",
+      "tokens": 65536,
+      "n_per_task": 10,
+      "scorer": "NVIDIA evaluate.py"
+    },
+    {
+      "path": "results/ruler/131072/summary.csv",
+      "sha256": "0c649e7954d51becf4c13b9885470db67152893fc024ce1096e16888a889e5ba",
+      "ctx": "128K",
+      "tokens": 131072,
+      "n_per_task": 10,
+      "scorer": "NVIDIA evaluate.py"
+    },
+    {
+      "path": "results/ruler/1048576/summary.csv",
+      "sha256": "a7b0fd1a149ae754cbc86e7361f09564af9e73da47b775f663b3ca89779b06f2",
+      "ctx": "1M",
+      "tokens": 1048576,
+      "n_per_task": 10,
+      "scorer": "NVIDIA evaluate.py"
+    }
+  ]
+}

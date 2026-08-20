@@ -1,0 +1,15 @@
+task,score_128k,score_1m
+niah_single_1,100.0,100.0
+niah_single_2,100.0,100.0
+niah_single_3,100.0,90.0
+niah_multikey_1,100.0,100.0
+niah_multikey_2,70.0,100.0
+niah_multikey_3,100.0,70.0
+niah_multivalue,97.5,97.5
+niah_multiquery,97.5,100.0
+vt,20.0,8.0
+cwe,39.0,1.0
+fwe,100.0,100.0
+qa_1,60.0,40.0
+qa_2,60.0,30.0
+mean,80.3,72.0
