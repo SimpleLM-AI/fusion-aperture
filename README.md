@@ -8,6 +8,56 @@ You can check that the published tables match the hashed score files and that th
 
 The measurement paper lives in `paper/`. Everything else exists so a careful reader can audit that paper without being handed the engine.
 
+## Results
+
+Host: frozen **Qwen3.5-2B**, **Q4_K_M**, no extra long-context training. Decode is greedy (NVIDIA RULER defaults). RULER uses n=10 per task per length; null answers are 0/10 at every length. Memory is Darwin `ri_phys_footprint` of the generation process on a Mac. The product surface is iPhone 12 and later, A14 Bionic and later chips and devices; that is not this meter.
+
+**RULER.** Unweighted 13-task mean. NIAH-8 is the eight retrieval tasks.
+
+| ctx | mean | NIAH-8 | vt | cwe | fwe | qa_1 | qa_2 |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 4K | 85.0 | 97.2 | 22 | 85 | 100 | 90 | 30 |
+| 8K | 85.1 | 96.6 | 16 | 84 | 93.33 | 80 | 60 |
+| 16K | 82.0 | 95.9 | 8 | 90 | 100 | 60 | 40 |
+| 32K | 85.7 | 96.3 | 16 | 88 | 100 | 80 | 60 |
+| 64K | 80.8 | 97.5 | 4 | 57 | 100 | 60 | 50 |
+| 128K | **80.3** | 95.6 | 20 | 39 | 100 | 60 | 60 |
+| 1M | **72.0** | **94.7** | 8 | 1 | 100 | 40 | 30 |
+
+<img src="paper/figures/ruler_context_curve.png" alt="RULER unweighted 13-task mean and NIAH-8 retrieval versus context length from 4K to 1M" width="720">
+
+**NIAH.** 110-cell Kamradt-style ladder. Not Gemini’s vendor needle, and not RULER NIAH-8.
+
+| | |
+|---|---|
+| Cells | 110 |
+| Passes | 107 |
+| Macro | 97.27% |
+| 1K–512K | 100% (99/99) |
+| 1M | 72.73% (8/11) |
+
+The three misses are at 1M only, depths 33.91%, 66.09%, and 89.57%.
+
+<img src="paper/figures/niah_ladder.png" alt="NIAH 10 by 11 pass fail grid. Three misses at 1M are marked." width="720">
+
+**OpenAI-MRCR.** 2-needle, bin (512K, 1M], n=91. Mean **0.326**.
+
+<img src="paper/figures/mrcr_comparison.png" alt="OpenAI MRCR two-needle 1M-class neighbourhood. Fusion Aperture 0.326 sits next to GPT-4.1 mini." width="720">
+
+**Physical memory.** Min / median / max, MB. The samples column is OS polls, not benchmark items. NIAH is omitted (too few polls). A 500 MB product budget is not a measured ceiling.
+
+| sweep | samples | min | median | max |
+|---|---:|---:|---:|---:|
+| RULER 32K | 839 | 445.5 | 479.5 | 543.3 |
+| RULER 64K | 904 | 437.0 | 482.9 | 522.4 |
+| RULER 128K | 257 | 387.1 | 450.2 | 492.9 |
+| RULER 1M | 827 | 399.9 | 514.5 | 766.6 |
+| MRCR 512K–1M | 69 | 482.5 | 520.6 | 520.7 |
+
+<img src="paper/figures/memory_context_curve.png" alt="RULER physical footprint median with min to max bars. The dashed line at 500 MB is the product budget, not a measured ceiling." width="720">
+
+Per-task 128K and 1M scores, miss cells, and published cousin scores with URLs are in `paper/` and `comparisons/`. Fusion Aperture achieves state-of-the-art quality–memory efficiency among training-free long-context inference systems at the 2B Q4, mobile, half-gigabyte-class operating point. That sentence is scoped. It is not a claim of the highest RULER mean among trained 30B to 235B models.
+
 ## What you can check
 
 The RULER `summary.csv` files and the MRCR summary are byte identical to the artifacts named in Appendix A of the paper. SHA-256 of those files is in `metadata/hashes.sha256`.
@@ -21,12 +71,6 @@ Stock scorers are NVIDIA `evaluate.py` for RULER and OpenAI’s published MRCR g
 ## What you cannot do here
 
 There is no binary, no container, no server, and no recipe that would let you regenerate a million token completion. Prediction jsonl files (prompt, completion, gold) are the item level audit trail for RULER. They are large. They are not in this clone. When we publish a release archive they will be listed in `results/manifests/` with hashes. Until that archive exists, the checkable objects are the summaries, the paper, and the derived tables.
-
-Physical memory is reported as Darwin `ri_phys_footprint` of the generation process on a Mac. The product surface is iPhone 12 and later, A14 Bionic and later chips and devices. Those two sentences are not the same measurement.
-
-## The operating point, in one paragraph
-
-A frozen Qwen3.5-2B checkpoint, quantized to Q4_K_M, with no extra long context training, is evaluated greedy on stock public harnesses. RULER scores 80.3 at 128K and 72.0 at 1M. The retrieval slice of RULER (NIAH-8) is 94.7 at 1M. A 110 cell needle ladder is 97.27% overall and perfect from 1K through 512K. OpenAI MRCR, two needle, 512K to 1M, is 0.326 on 91 items. Physical footprint medians sit between 450 MB and 515 MB. The 128K peak is 492.9 MB. Several sweeps, including 1M at 766.6 MB, go above 500 MB at maximum. Fusion Aperture achieves state-of-the-art quality–memory efficiency among training-free long-context inference systems at the 2B Q4, mobile, half-gigabyte-class operating point. That sentence is scoped. It is not a claim of the highest RULER mean among trained 30B to 235B models.
 
 ## How the folders are meant to be read
 
